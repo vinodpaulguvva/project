@@ -1,0 +1,13 @@
+
+diff --git a/app/example.py b/app/example.py
+new file mode 100644
+index 0000000..e69de29
+--- /dev/null
++++ b/app/example.py
+@@ -0,0 +1,6 @@
++def get_user(id):
++    query = "SELECT * FROM users WHERE id = %s" % id
++    db.execute(query)
++    return db.fetchone()
++
++print('done')
